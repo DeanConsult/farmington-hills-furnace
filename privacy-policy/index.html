@@ -72,13 +72,14 @@
   <p>If you have any questions or concerns about this privacy policy, you can reach us by phone at <a href="tel:2484220174">248-422-0174</a> or by filling out the form on our <a href="/">home page</a>.</p>
 </div>
 <footer>
-  <span>&copy; 2025 Farmington Hills Furnace LLC.</span>
+  <span>&copy; <span id="yr"></span> Farmington Hills Furnace LLC.</span>
   <a href="/">Home</a>
   <a href="../privacy-policy/">Privacy Policy</a>
   <a href="../resources/">Resources</a>
 </footer>
 <a href="tel:2484220174" class="mobile-call-btn">Call Now — 248-422-0174</a>
 <script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
   (function () {
     var hb = document.querySelector(".hamburger");
     var nv = document.querySelector(".nav-links");

@@ -228,7 +228,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2025 Farmington Hills Furnace LLC. All rights reserved.</span>
+      <span>&copy; <span id="yr"></span> Farmington Hills Furnace LLC. All rights reserved.</span>
       <a href="../privacy-policy/">Privacy Policy</a>
     </div>
   </div>
@@ -237,6 +237,7 @@
 <a href="tel:2484220174" class="mobile-call-btn">Call Now — 248-422-0174</a>
 
 <script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
   (function () {
     var hb = document.querySelector(".hamburger");
     var nv = document.querySelector(".nav-links");
